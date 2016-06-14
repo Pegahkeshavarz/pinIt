@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E7159ECC1CEBC78100581060 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7159ECB1CEBC78100581060 /* FBSDKCoreKit.framework */; };
+		E7159ED01CEBC78A00581060 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7159ECD1CEBC78A00581060 /* FBSDKLoginKit.framework */; };
+		E7159ED41CEBC97B00581060 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7159ED31CEBC97B00581060 /* LoginViewController.swift */; };
+		E77D3C3E1CED01B9008A4EF0 /* UserMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77D3C3D1CED01B9008A4EF0 /* UserMenuViewController.swift */; };
+		E77D3C401CED0205008A4EF0 /* DetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77D3C3F1CED0205008A4EF0 /* DetailsTableViewController.swift */; };
+		E77D3C421CED541A008A4EF0 /* FriendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77D3C411CED541A008A4EF0 /* FriendController.swift */; };
 		E7A357941CE4F50C00DA1058 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A357931CE4F50C00DA1058 /* AppDelegate.swift */; };
 		E7A357961CE4F50C00DA1058 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A357951CE4F50C00DA1058 /* ViewController.swift */; };
 		E7A357991CE4F50C00DA1058 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7A357971CE4F50C00DA1058 /* Main.storyboard */; };
@@ -34,6 +40,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E7159ECB1CEBC78100581060 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		E7159ECD1CEBC78A00581060 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		E7159ED31CEBC97B00581060 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../LoginViewController.swift; sourceTree = "<group>"; };
+		E7159F2D1CEC173C00581060 /* Map-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Map-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		E77D3C3D1CED01B9008A4EF0 /* UserMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserMenuViewController.swift; sourceTree = "<group>"; };
+		E77D3C3F1CED0205008A4EF0 /* DetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsTableViewController.swift; sourceTree = "<group>"; };
+		E77D3C411CED541A008A4EF0 /* FriendController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FriendController.swift; path = ../FriendController.swift; sourceTree = "<group>"; };
 		E7A357901CE4F50B00DA1058 /* Map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Map.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7A357931CE4F50C00DA1058 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7A357951CE4F50C00DA1058 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7159ED01CEBC78A00581060 /* FBSDKLoginKit.framework in Frameworks */,
+				E7159ECC1CEBC78100581060 /* FBSDKCoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,11 +112,18 @@
 		E7A357921CE4F50C00DA1058 /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				E7159ECD1CEBC78A00581060 /* FBSDKLoginKit.framework */,
+				E7159ECB1CEBC78100581060 /* FBSDKCoreKit.framework */,
 				E7A357931CE4F50C00DA1058 /* AppDelegate.swift */,
+				E77D3C411CED541A008A4EF0 /* FriendController.swift */,
+				E7159ED31CEBC97B00581060 /* LoginViewController.swift */,
 				E7A357951CE4F50C00DA1058 /* ViewController.swift */,
+				E77D3C3D1CED01B9008A4EF0 /* UserMenuViewController.swift */,
+				E77D3C3F1CED0205008A4EF0 /* DetailsTableViewController.swift */,
 				E7A357971CE4F50C00DA1058 /* Main.storyboard */,
 				E7A3579A1CE4F50C00DA1058 /* Assets.xcassets */,
 				E7A3579C1CE4F50C00DA1058 /* LaunchScreen.storyboard */,
+				E7159F2D1CEC173C00581060 /* Map-Bridging-Header.h */,
 				E7A3579F1CE4F50C00DA1058 /* Info.plist */,
 			);
 			path = Map;
@@ -193,6 +215,7 @@
 				TargetAttributes = {
 					E7A3578F1CE4F50B00DA1058 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 9ZEKMJZVQN;
 					};
 					E7A357A31CE4F50C00DA1058 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -256,7 +279,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E77D3C421CED541A008A4EF0 /* FriendController.swift in Sources */,
+				E7159ED41CEBC97B00581060 /* LoginViewController.swift in Sources */,
+				E77D3C401CED0205008A4EF0 /* DetailsTableViewController.swift in Sources */,
 				E7A357961CE4F50C00DA1058 /* ViewController.swift in Sources */,
+				E77D3C3E1CED01B9008A4EF0 /* UserMenuViewController.swift in Sources */,
 				E7A357941CE4F50C00DA1058 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,10 +428,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Map/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.codingdojo.Map;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codingdojo.PinIt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Map-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -412,10 +449,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Map/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.codingdojo.Map;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codingdojo.PinIt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Map-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -484,6 +530,7 @@
 				E7A357BA1CE4F50C00DA1058 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E7A357BB1CE4F50C00DA1058 /* Build configuration list for PBXNativeTarget "MapTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +539,7 @@
 				E7A357BD1CE4F50C00DA1058 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E7A357BE1CE4F50C00DA1058 /* Build configuration list for PBXNativeTarget "MapUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +548,7 @@
 				E7A357C01CE4F50C00DA1058 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
